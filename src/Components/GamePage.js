@@ -9,7 +9,7 @@ import xbox360 from "../Assets/GameBoards/xbox360.jpg";
 
 const GamePage = (props) => {
   return (
-    <div>
+    <div className="flex items-center justify-center ">
       <img
         src={
           props.game === "ps1"
@@ -29,6 +29,7 @@ const GamePage = (props) => {
             : n64
         }
         alt={props.game}
+        className="w-full h-full"
       />
     </div>
   );
