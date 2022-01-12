@@ -4,11 +4,12 @@ import { useState } from "react";
 
 const App = () => {
   const [game, setGame] = useState("n64");
+  const [currentPage, setCurrentPage] = useState("home");
 
   return (
     <div className="App">
-      <Nav />
-      <GamePage game={game} />
+      <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} />
+      {currentPage === "home" ? "home" : <GamePage game={game} />}
     </div>
   );
 };
