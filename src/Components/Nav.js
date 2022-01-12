@@ -3,7 +3,7 @@ import Characters from "./Nav/Characters";
 
 const Nav = () => {
   return (
-    <nav className="fixed w-screen h-[3.5em] flex justify-around items-center text-2xl font-extrabold p-3">
+    <nav className="fixed top-0 flex items-center justify-around w-screen p-3 text-2xl font-extrabold text-white select-none h-fit">
       <Characters />
       <h1>Logo</h1>
       <Timer />
