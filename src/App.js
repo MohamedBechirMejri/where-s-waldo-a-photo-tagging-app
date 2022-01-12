@@ -1,6 +1,7 @@
 import Nav from "./Components/Nav";
 import GamePage from "./Components/GamePage";
 import { useState } from "react";
+import Home from "./Components/Home";
 
 const App = () => {
   const [game, setGame] = useState("n64");
@@ -9,7 +10,8 @@ const App = () => {
   return (
     <div className="App">
       <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} />
-      {currentPage === "home" ? "home" : <GamePage game={game} />}
+
+      {currentPage === "home" ? <Home /> : <GamePage game={game} />}
     </div>
   );
 };
