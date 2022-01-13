@@ -3,11 +3,19 @@ import Characters from "./Nav/Characters";
 
 const Nav = (props) => {
   return (
-    <nav className="fixed top-0 flex items-center justify-around w-screen p-3 text-2xl font-extrabold text-white select-none h-fit">
+    <nav
+      className="fixed top-0 z-10 flex items-center justify-around w-screen p-3 text-2xl font-extrabold text-white select-none h-fit"
+      style={{
+        "-webkit-text-stroke": "1px white",
+      }}
+    >
       {props.currentPage === "game" ? (
         <Characters />
       ) : (
-        <button className="px-4 py-2 font-semibold text-white transition-all bg-transparent border border-white rounded hover:bg-white hover:text-black active:scale-95">
+        <button
+          className="text-2xl text-transparent transition-all active:scale-95 hover:text-white"
+          onClick={() => props.setCurrentPage("credits")}
+        >
           Credits
         </button>
       )}
@@ -16,13 +24,17 @@ const Nav = (props) => {
         style={{
           "-webkit-text-stroke": "1px white",
         }}
+        onClick={() => props.setCurrentPage("home")}
       >
         🦅I
       </h1>
       {props.currentPage === "game" ? (
         <Timer />
       ) : (
-        <button className="px-4 py-2 font-semibold text-white transition-all bg-transparent border border-white rounded hover:bg-white hover:text-black active:scale-95">
+        <button
+          className="text-2xl text-transparent transition-all active:scale-95 hover:text-white"
+          onClick={() => props.setCurrentPage("scores")}
+        >
           Top Scores
         </button>
       )}
