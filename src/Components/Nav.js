@@ -13,7 +13,7 @@ const Nav = (props) => {
         <Characters />
       ) : (
         <button
-          className="transition-all  active:scale-95 hover:text-white"
+          className="transition-all active:scale-95 hover:text-white"
           onClick={() => props.setCurrentPage("credits")}
         >
           Credits
@@ -23,7 +23,7 @@ const Nav = (props) => {
         className="text-3xl uppercase transition-all active:scale-95 hover:text-white"
         onClick={() => props.setCurrentPage("home")}
       >
-        🦅I
+        Home
       </h1>
       {props.currentPage === "game" ? (
         <Timer />
