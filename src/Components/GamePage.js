@@ -24,13 +24,12 @@ const GamePage = (props) => {
             ? dreamcast
             : n64
         }
-        alt={props.game}
+        alt={props.game.console}
         className="w-full h-full"
         onClick={(e) => {
           const rect = e.target.getBoundingClientRect();
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
-          console.log(x, y);
           return {
             x,
             y,

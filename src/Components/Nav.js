@@ -10,7 +10,7 @@ const Nav = (props) => {
       }}
     >
       {props.currentPage === "game" ? (
-        <Characters />
+        <Characters game={props.game} />
       ) : (
         <button
           className="transition-all active:scale-95 hover:text-white"

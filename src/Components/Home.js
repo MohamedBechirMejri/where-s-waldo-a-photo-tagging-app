@@ -19,7 +19,7 @@ const Home = (props) => {
           <div
             key={consoles[i]}
             onClick={() => {
-              props.setGame(consoles[i]);
+              props.setGame({ console: consoles[i], i });
               props.setCurrentPage("game");
             }}
             className="relative w-1/3 overflow-hidden transition-all sm:w-1/5 rounded-2xl sm:hover:scale-105"

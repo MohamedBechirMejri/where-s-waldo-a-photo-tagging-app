@@ -9,7 +9,11 @@ const App = () => {
 
   return (
     <div className="bg-[#272727] min-h-screen w-screen">
-      <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} />
+      <Nav
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        game={game}
+      />
 
       {currentPage === "game" ? (
         <GamePage game={game} />
