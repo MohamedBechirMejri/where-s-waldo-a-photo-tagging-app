@@ -8,10 +8,18 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
 
   return (
-    <div className="App">
+    <div className="bg-[#272727] min-h-screen w-screen">
       <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} />
 
-      {currentPage === "home" ? <Home /> : <GamePage game={game} />}
+      {currentPage === "game" ? (
+        <GamePage game={game} />
+      ) : currentPage === "credits" ? (
+        <div>credits</div>
+      ) : currentPage === "scores" ? (
+        <div>Scores</div>
+      ) : (
+        <Home />
+      )}
     </div>
   );
 };
