@@ -18,7 +18,7 @@ const App = () => {
       ) : currentPage === "scores" ? (
         <div>Scores</div>
       ) : (
-        <Home />
+        <Home setCurrentPage={setCurrentPage} setGame={setGame} />
       )}
     </div>
   );
