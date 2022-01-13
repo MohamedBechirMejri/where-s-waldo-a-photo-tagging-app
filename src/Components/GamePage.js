@@ -8,19 +8,19 @@ const GamePage = (props) => {
       <img
         draggable="false"
         src={
-          props.game === "ps1"
+          props.game.console === "ps1"
             ? ps1
-            : props.game === "ps2"
+            : props.game.console === "ps2"
             ? ps2
-            : props.game === "ps4"
+            : props.game.console === "ps4"
             ? ps4
-            : props.game === "xbox"
+            : props.game.console === "xbox"
             ? xbox
-            : props.game === "xbox360"
+            : props.game.console === "xbox360"
             ? xbox360
-            : props.game === "gamecube"
+            : props.game.console === "gamecube"
             ? gamecube
-            : props.game === "dreamcast"
+            : props.game.console === "dreamcast"
             ? dreamcast
             : n64
         }
