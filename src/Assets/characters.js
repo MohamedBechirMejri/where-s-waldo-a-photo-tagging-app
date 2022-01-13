@@ -7,16 +7,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -24,16 +27,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -41,16 +47,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -58,16 +67,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -75,16 +87,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -92,16 +107,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -109,16 +127,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
   [
@@ -126,16 +147,19 @@ const characters = [
       src: mario,
       alt: "mario",
       isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
     {
       src: luigi,
       alt: "luigi",
       isFound: false,
-    },
-    {
-      src: mario,
-      alt: "mario",
-      isFound: false,
+      coords: {
+        x: 0,
+        y: 0,
+      },
     },
   ],
 ];
