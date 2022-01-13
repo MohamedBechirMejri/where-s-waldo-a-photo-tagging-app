@@ -6,6 +6,7 @@ const GamePage = (props) => {
   return (
     <div className="flex items-center justify-center ">
       <img
+        draggable="false"
         src={
           props.game === "ps1"
             ? ps1

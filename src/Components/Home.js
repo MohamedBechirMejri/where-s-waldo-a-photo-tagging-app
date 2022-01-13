@@ -24,7 +24,7 @@ const Home = (props) => {
             }}
             className="relative w-1/3 overflow-hidden transition-all sm:w-1/5 rounded-2xl sm:hover:scale-105"
           >
-            <img src={game} alt={consoles[i]} />
+            <img src={game} alt={consoles[i]} draggable="false" />
 
             <h1 className="absolute text-2xl font-extrabold text-white uppercase -translate-x-1/2 top-4 left-1/2">
               {consoles[i]}
