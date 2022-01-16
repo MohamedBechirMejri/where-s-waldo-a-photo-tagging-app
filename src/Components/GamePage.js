@@ -27,12 +27,21 @@ const GamePage = (props) => {
         alt={props.game.console}
         className="w-full h-full"
         onClick={(e) => {
-          const rect = e.target.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          return {
-            x,
-            y,
+          e.preventDefault();
+
+          // get image click position
+          const x = e.pageX;
+          const y = e.pageY;
+
+          // get image size
+          const img = e.target;
+          const width = img.width;
+          const height = img.height;
+
+          // get click position relative to image (for different screens)
+          const position = {
+            x: ((x / width) * 100).toFixed(2),
+            y: ((y / height) * 100).toFixed(2),
           };
         }}
       />
