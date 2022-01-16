@@ -50,7 +50,12 @@ const GamePage = (props) => {
           setCurrentPosition(position);
         }}
       />
-      {currentPosition && <Dropdown currentPosition={currentPosition} />}
+      {currentPosition && (
+        <Dropdown
+          currentPosition={currentPosition}
+          setCurrentPosition={setCurrentPosition}
+        />
+      )}
     </div>
   );
 };
