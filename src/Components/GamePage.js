@@ -1,10 +1,14 @@
 import GameBoards from "../Assets/Gameboards";
+import Dropdown from "./GamePage/Dropdown";
+import { useState } from "react";
 
 const [dreamcast, gamecube, n64, ps1, ps2, ps4, xbox, xbox360] = GameBoards;
 
 const GamePage = (props) => {
+  const [currentPosition, setCurrentPosition] = useState(null);
+
   return (
-    <div className="flex items-center justify-center ">
+    <div className="relative flex items-center justify-center ">
       <img
         draggable="false"
         src={
@@ -43,8 +47,10 @@ const GamePage = (props) => {
             x: ((x / width) * 100).toFixed(2),
             y: ((y / height) * 100).toFixed(2),
           };
+          setCurrentPosition(position);
         }}
       />
+      {currentPosition && <Dropdown currentPosition={currentPosition} />}
     </div>
   );
 };
