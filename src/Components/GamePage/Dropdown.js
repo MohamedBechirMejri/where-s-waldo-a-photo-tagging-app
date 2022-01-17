@@ -1,7 +1,7 @@
 const Dropdown = (props) => {
   return (
     <div
-      className="absolute flex flex-col overflow-hidden text-xl transition-all bg-white rounded"
+      className="absolute flex flex-col overflow-hidden text-xl transition-all origin-top bg-white rounded animate-revealDD"
       style={{
         top: `${props.currentPosition.y}%`,
         left: `${props.currentPosition.x}%`,
