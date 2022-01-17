@@ -12,7 +12,7 @@ const Dropdown = (props) => {
       {characters[props.game.i].map((character, i) => (
         <button
           key={character.alt}
-          className="p-4 transition-all bg-[#ffffffa1] hover:bg-[#00000079] hover:text-white animate-revealDD  opacity-0 flex flex-col justify-start items-center uppercase sm:flex-row "
+          className="p-4 transition-all bg-[#ffffffa1] hover:bg-[#00000079] hover:text-white animate-revealDD  opacity-0 flex flex-col justify-between items-center uppercase sm:flex-row gap-4"
           onClick={() => {
             const { x, y } = props.currentPosition;
             const { xMax, yMax, xMin, yMin } = character.coords;
