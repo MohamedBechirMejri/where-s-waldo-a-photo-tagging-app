@@ -1,5 +1,4 @@
-
-import characters from '../../Assets/characters';
+import characters from "../../Assets/characters";
 const Characters = (props) => {
   return (
     <div className="flex items-center justify-center  h-full bg-[#ffffff62]   rounded-xl gap-4 w-1/3 overflow-scroll flex-wrap">
@@ -7,7 +6,7 @@ const Characters = (props) => {
         <img
           src={character.src}
           alt={character.alt}
-          className="h-[1.75em]"
+          className={`" h-[1.75em] ${character.isFound && "opacity-40"} "`}
           draggable="false"
           key={character.alt}
         />
