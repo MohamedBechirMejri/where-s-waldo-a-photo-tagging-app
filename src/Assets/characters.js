@@ -78,7 +78,17 @@ const characters = [
         yMin: "46.35",
       },
     },
-    
+    {
+      src: kirby,
+      alt: "kirby",
+      isFound: false,
+      coords: {
+        xMax: "79.46",
+        XMin: "71.20",
+        yMax: "49.46",
+        yMin: "46.35",
+      },
+    },
   ],
   // PS1
   [
