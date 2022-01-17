@@ -3,15 +3,16 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        revealDD: "revealDD .3s  ",
+        revealDD: "revealDD .2s forwards ",
       },
       keyframes: {
         revealDD: {
           "0%": {
-            transform: "scale(1, 0)",
+            opacity: 0,
+            transform: "translate(0, -50%)",
           },
           "100%": {
-            transform: "scale(1, 1)",
+            opacity: 1,
           },
         },
       },
