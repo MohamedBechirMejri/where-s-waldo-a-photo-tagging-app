@@ -2,9 +2,18 @@ import seaman from "./Characters/seaman.png";
 import sonic from "./Characters/sonic.png";
 import sambaDeAmigo from "./Characters/samba-de-amigo.png";
 
+import superMonkey from "./Characters/super-monkey.png";
+import zelda from "./Characters/zelda.png";
+import metroidPrime from "./Characters/metroid-prime.png";
+
 import mario from "./Characters/Mario.webp";
 import luigi from "./Characters/Luigi.png";
 import kirby from "./Characters/kirby.png";
+
+import apeEscape from "./Characters/ape-escape.png";
+import crashBandicoot from "./Characters/crash-bandicoot.webp";
+import kazuyaMishima from "./Characters/kazuya-mishima.webp";
+import laraCroft from "./Characters/lara-croft.png";
 
 const characters = [
   // Dreamcast
@@ -46,8 +55,8 @@ const characters = [
   // Gamecube
   [
     {
-      src: mario,
-      alt: "mario",
+      src: superMonkey,
+      alt: "super Monkey",
       isFound: false,
       coords: {
         xMax: 0,
@@ -57,8 +66,19 @@ const characters = [
       },
     },
     {
-      src: luigi,
-      alt: "luigi",
+      src: zelda,
+      alt: "zelda",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: metroidPrime,
+      alt: "metroid Prime",
       isFound: false,
       coords: {
         xMax: 0,
@@ -107,8 +127,8 @@ const characters = [
   // PS1
   [
     {
-      src: mario,
-      alt: "mario",
+      src: apeEscape,
+      alt: "ape Escape",
       isFound: false,
       coords: {
         xMax: 0,
@@ -118,8 +138,30 @@ const characters = [
       },
     },
     {
-      src: luigi,
-      alt: "luigi",
+      src: crashBandicoot,
+      alt: "crash Bandicoot",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: kazuyaMishima,
+      alt: "kazuya Mishima",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: laraCroft,
+      alt: "lara Croft",
       isFound: false,
       coords: {
         xMax: 0,
