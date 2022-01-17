@@ -2,7 +2,6 @@ import mario from "./Characters/Mario.webp";
 import luigi from "./Characters/Luigi.png";
 import kirby from "./Characters/kirby.png";
 
-
 const characters = [
   // Dreamcast
   [
@@ -12,7 +11,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -23,7 +22,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -37,7 +36,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -48,7 +47,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -62,7 +61,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: "68.63",
-        XMin: "62.94",
+        xMin: "62.94",
         yMax: "62.11",
         yMin: "58.49",
       },
@@ -73,7 +72,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: "79.46",
-        XMin: "71.20",
+        xMin: "71.20",
         yMax: "49.46",
         yMin: "46.35",
       },
@@ -83,10 +82,10 @@ const characters = [
       alt: "kirby",
       isFound: false,
       coords: {
-        xMax: "79.46",
-        XMin: "71.20",
-        yMax: "49.46",
-        yMin: "46.35",
+        xMax: "90.73",
+        xMin: "86.20",
+        yMax: "65.91",
+        yMin: "63.62",
       },
     },
   ],
@@ -98,7 +97,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -109,7 +108,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -123,7 +122,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -134,7 +133,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -148,7 +147,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -159,7 +158,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -173,7 +172,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -184,7 +183,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -198,7 +197,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
@@ -209,7 +208,7 @@ const characters = [
       isFound: false,
       coords: {
         xMax: 0,
-        XMin: 0,
+        xMin: 0,
         yMax: 0,
         yMin: 0,
       },
