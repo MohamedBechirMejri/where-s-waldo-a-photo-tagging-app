@@ -1,3 +1,7 @@
+import seaman from "./Characters/seaman.png";
+import sonic from "./Characters/sonic.png";
+import sambaDeAmigo from "./Characters/samba-de-amigo.png";
+
 import mario from "./Characters/Mario.webp";
 import luigi from "./Characters/Luigi.png";
 import kirby from "./Characters/kirby.png";
@@ -6,8 +10,8 @@ const characters = [
   // Dreamcast
   [
     {
-      src: mario,
-      alt: "mario",
+      src: sonic,
+      alt: "sonic",
       isFound: false,
       coords: {
         xMax: 0,
@@ -17,8 +21,19 @@ const characters = [
       },
     },
     {
-      src: luigi,
-      alt: "luigi",
+      src: seaman,
+      alt: "seaman",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: sambaDeAmigo,
+      alt: "samba de amigo",
       isFound: false,
       coords: {
         xMax: 0,
