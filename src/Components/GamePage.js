@@ -54,6 +54,7 @@ const GamePage = (props) => {
         <Dropdown
           currentPosition={currentPosition}
           setCurrentPosition={setCurrentPosition}
+          game={props.game}
         />
       )}
     </div>
