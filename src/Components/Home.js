@@ -26,7 +26,11 @@ const Home = (props) => {
               props.setGame({ console: consoles[i], i });
               props.setCurrentPage("game");
             }}
-            className="relative w-1/3 overflow-hidden transition-all sm:w-1/5 rounded-2xl sm:hover:scale-105"
+            className="relative w-1/3 overflow-hidden transition-all sm:w-1/5 rounded-2xl sm:hover:scale-105 "
+            style={{
+              animationDelay: `${i * 0.05}s`,
+              animation: `revealScores ${(i + 1) * 0.2}s ease-in-out`,
+            }}
           >
             <img src={game} alt={consoles[i]} draggable="false" />
 
