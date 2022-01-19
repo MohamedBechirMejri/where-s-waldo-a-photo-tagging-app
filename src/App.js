@@ -3,6 +3,7 @@ import GamePage from "./Components/GamePage";
 import { useState } from "react";
 import Home from "./Components/Home";
 import Scores from "./Components/Scores";
+import Credits from "./Components/Credits";
 
 const App = () => {
   const [game, setGame] = useState("n64");
@@ -31,9 +32,9 @@ const App = () => {
           setScore={setScore}
         />
       ) : currentPage === "credits" ? (
-        <div>credits</div>
+        <Credits />
       ) : currentPage === "scores" ? (
-        <Scores/>
+        <Scores />
       ) : (
         <Home
           setCurrentPage={setCurrentPage}
