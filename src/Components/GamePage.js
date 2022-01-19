@@ -1,11 +1,16 @@
 import GameBoards from "../Assets/Gameboards";
 import Dropdown from "./GamePage/Dropdown";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import characters from "../Assets/characters";
 
 const [dreamcast, gamecube, n64, ps1, ps2, ps4, xbox, xbox360] = GameBoards;
 
 const GamePage = (props) => {
   const [currentPosition, setCurrentPosition] = useState(null);
+
+  useEffect(() => {
+    props.setChars(characters[props.game.i]);
+  }, []);
 
   return (
     <div className="relative flex items-center justify-center ">
@@ -55,6 +60,8 @@ const GamePage = (props) => {
           currentPosition={currentPosition}
           setCurrentPosition={setCurrentPosition}
           game={props.game}
+          chars={props.chars}
+          setChars={props.setChars}
         />
       )}
     </div>

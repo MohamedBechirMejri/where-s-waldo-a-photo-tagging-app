@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 const App = () => {
   const [game, setGame] = useState("n64");
   const [currentPage, setCurrentPage] = useState("home");
+  const [chars, setChars] = useState([]);
 
   return (
     <div className="bg-[#272727] min-h-screen w-screen">
@@ -13,10 +14,11 @@ const App = () => {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
         game={game}
+        chars={chars}
       />
 
       {currentPage === "game" ? (
-        <GamePage game={game} />
+        <GamePage game={game} chars={chars} setChars={setChars} />
       ) : currentPage === "credits" ? (
         <div>credits</div>
       ) : currentPage === "scores" ? (

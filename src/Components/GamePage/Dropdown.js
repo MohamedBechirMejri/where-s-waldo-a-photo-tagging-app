@@ -1,5 +1,3 @@
-import characters from "../../Assets/characters";
-
 const Dropdown = (props) => {
   return (
     <div
@@ -9,7 +7,7 @@ const Dropdown = (props) => {
         left: `${props.currentPosition.x}%`,
       }}
     >
-      {characters[props.game.i].map((character, i) => (
+      {props.chars.map((character, i) => (
         <button
           key={character.alt}
           className="p-4 transition-all bg-[#ffffffa1] hover:bg-[#00000079] hover:text-white animate-revealDD  opacity-0 flex flex-col justify-between items-center uppercase sm:flex-row gap-4"
@@ -18,7 +16,8 @@ const Dropdown = (props) => {
             const { xMax, yMax, xMin, yMin } = character.coords;
 
             if (+x > +xMin && +x < +xMax && +y > +yMin && +y < +yMax) {
-              console.log("You found a character!");
+              character.isFound = true;
+              props.setChars([...props.chars]);
             }
             props.setCurrentPosition(null);
           }}

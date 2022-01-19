@@ -1,8 +1,7 @@
-import characters from "../../Assets/characters";
 const Characters = (props) => {
   return (
     <div className="flex items-center justify-center  h-full bg-[#ffffff62]   rounded-xl gap-4 w-1/3 overflow-scroll flex-wrap">
-      {characters[props.game.i].map((character) => (
+      {props.chars.map((character) => (
         <img
           src={character.src}
           alt={character.alt}
