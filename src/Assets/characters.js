@@ -19,6 +19,14 @@ import tommyVercetti from "./Characters/tommy-vercetti.png";
 import amaterasu from "./Characters/amaterasu.webp";
 import kratos from "./Characters/kratos.png";
 
+import spiderman from "./Characters/spiderman.png";
+import atreus from "./Characters/atreus.png";
+import twob from "./Characters/2b.png";
+
+import cj from "./Characters/cj.webp";
+
+import nikoBellic from "./Characters/niko-bellic.png";
+
 const characters = [
   // Dreamcast
   [
@@ -214,8 +222,8 @@ const characters = [
   // PS4
   [
     {
-      src: mario,
-      alt: "mario",
+      src: spiderman,
+      alt: "spiderman",
       isFound: false,
       coords: {
         xMax: 0,
@@ -225,8 +233,19 @@ const characters = [
       },
     },
     {
-      src: luigi,
-      alt: "luigi",
+      src: atreus,
+      alt: "atreus",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: twob,
+      alt: "2b",
       isFound: false,
       coords: {
         xMax: 0,
@@ -239,19 +258,8 @@ const characters = [
   // Xbox
   [
     {
-      src: mario,
-      alt: "mario",
-      isFound: false,
-      coords: {
-        xMax: 0,
-        xMin: 0,
-        yMax: 0,
-        yMin: 0,
-      },
-    },
-    {
-      src: luigi,
-      alt: "luigi",
+      src: cj,
+      alt: "cj",
       isFound: false,
       coords: {
         xMax: 0,
@@ -264,19 +272,8 @@ const characters = [
   // XBOX360
   [
     {
-      src: mario,
-      alt: "mario",
-      isFound: false,
-      coords: {
-        xMax: 0,
-        xMin: 0,
-        yMax: 0,
-        yMin: 0,
-      },
-    },
-    {
-      src: luigi,
-      alt: "luigi",
+      src: nikoBellic,
+      alt: "niko Bellic",
       isFound: false,
       coords: {
         xMax: 0,
