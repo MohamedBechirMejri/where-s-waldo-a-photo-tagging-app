@@ -22,7 +22,7 @@ const Dropdown = (props) => {
                   character.isFound = true;
                   props.setChars([...props.chars]);
                   if (!props.chars.find((char) => char.isFound === false))
-                    console.log("game over");
+                    props.setGameOver(true);
                 }
                 props.setCurrentPosition(null);
               }}

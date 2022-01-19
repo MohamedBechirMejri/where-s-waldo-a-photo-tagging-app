@@ -2,11 +2,13 @@ import GameBoards from "../Assets/Gameboards";
 import Dropdown from "./GamePage/Dropdown";
 import { useEffect, useState } from "react";
 import characters from "../Assets/characters";
+import GameOver from "./GamePage/GameOver";
 
 const [dreamcast, gamecube, n64, ps1, ps2, ps4, xbox, xbox360] = GameBoards;
 
 const GamePage = (props) => {
   const [currentPosition, setCurrentPosition] = useState(null);
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     props.setChars(characters[props.game.i]);
@@ -62,8 +64,10 @@ const GamePage = (props) => {
           game={props.game}
           chars={props.chars}
           setChars={props.setChars}
+          setGameOver={setGameOver}
         />
       )}
+      {gameOver && <GameOver setCurrentPage={props.setCurrentPage} />}
     </div>
   );
 };

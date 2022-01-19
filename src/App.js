@@ -18,7 +18,13 @@ const App = () => {
       />
 
       {currentPage === "game" ? (
-        <GamePage game={game} chars={chars} setChars={setChars} />
+        <GamePage
+          game={game}
+          chars={chars}
+          setChars={setChars}
+          setCurrentPage={setCurrentPage}
+          setGame={setGame}
+        />
       ) : currentPage === "credits" ? (
         <div>credits</div>
       ) : currentPage === "scores" ? (
