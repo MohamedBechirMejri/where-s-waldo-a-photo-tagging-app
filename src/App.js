@@ -2,6 +2,7 @@ import Nav from "./Components/Nav";
 import GamePage from "./Components/GamePage";
 import { useState } from "react";
 import Home from "./Components/Home";
+import Scores from "./Components/Scores";
 
 const App = () => {
   const [game, setGame] = useState("n64");
@@ -32,7 +33,7 @@ const App = () => {
       ) : currentPage === "credits" ? (
         <div>credits</div>
       ) : currentPage === "scores" ? (
-        <div>Scores</div>
+        <Scores/>
       ) : (
         <Home
           setCurrentPage={setCurrentPage}
