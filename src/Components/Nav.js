@@ -4,7 +4,7 @@ import Characters from "./Nav/Characters";
 const Nav = (props) => {
   return (
     <nav
-      className="fixed top-0 z-10 flex items-center justify-around w-screen p-3 text-2xl font-extrabold text-transparent text-white select-none h-fit"
+      className="fixed top-0 z-10 flex items-center justify-between w-screen p-4 text-2xl font-extrabold text-transparent text-white select-none h-fit"
       style={{
         WebkitTextStroke: "0.5px white",
       }}
@@ -26,7 +26,7 @@ const Nav = (props) => {
         Home
       </h1>
       {props.currentPage === "game" ? (
-        <Timer />
+        <Timer score={props.score} />
       ) : (
         <button
           className="transition-all active:scale-95 hover:text-white"
