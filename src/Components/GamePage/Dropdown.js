@@ -5,10 +5,12 @@ const Dropdown = (props) => {
       style={{
         top: `${props.currentPosition.y}%`,
         left: `${props.currentPosition.x}%`,
+        // TODO: prevent from going out of the screen
       }}
     >
       {props.chars.map((character, i) => (
-        <button
+        !character.isFound &&
+        (<button
           key={character.alt}
           className="p-4 transition-all bg-[#ffffffa1] hover:bg-[#00000079] hover:text-white animate-revealDD  opacity-0 flex flex-col justify-between items-center uppercase sm:flex-row gap-4"
           onClick={() => {
@@ -18,6 +20,8 @@ const Dropdown = (props) => {
             if (+x > +xMin && +x < +xMax && +y > +yMin && +y < +yMax) {
               character.isFound = true;
               props.setChars([...props.chars]);
+              if (!props.chars.find((char) => char.isFound === false))
+                console.log("game over");
             }
             props.setCurrentPosition(null);
           }}
@@ -33,7 +37,7 @@ const Dropdown = (props) => {
             draggable="false"
           />
           {character.alt}
-        </button>
+        </button>)
       ))}
     </div>
   );
