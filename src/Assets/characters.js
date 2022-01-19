@@ -15,6 +15,10 @@ import crashBandicoot from "./Characters/crash-bandicoot.webp";
 import kazuyaMishima from "./Characters/kazuya-mishima.webp";
 import laraCroft from "./Characters/lara-croft.png";
 
+import tommyVercetti from "./Characters/tommy-vercetti.png";
+import amaterasu from "./Characters/amaterasu.webp";
+import kratos from "./Characters/kratos.png";
+
 const characters = [
   // Dreamcast
   [
@@ -174,8 +178,8 @@ const characters = [
   // PS2
   [
     {
-      src: mario,
-      alt: "mario",
+      src: tommyVercetti,
+      alt: "tommy Vercetti",
       isFound: false,
       coords: {
         xMax: 0,
@@ -185,8 +189,19 @@ const characters = [
       },
     },
     {
-      src: luigi,
-      alt: "luigi",
+      src: amaterasu,
+      alt: "amaterasu",
+      isFound: false,
+      coords: {
+        xMax: 0,
+        xMin: 0,
+        yMax: 0,
+        yMin: 0,
+      },
+    },
+    {
+      src: kratos,
+      alt: "kratos",
       isFound: false,
       coords: {
         xMax: 0,
