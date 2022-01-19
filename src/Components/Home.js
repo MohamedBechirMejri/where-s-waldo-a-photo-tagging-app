@@ -1,4 +1,5 @@
 import GameBoards from "../Assets/Gameboards";
+import { useEffect } from "react";
 
 const consoles = [
   "dreamcast",
@@ -12,6 +13,9 @@ const consoles = [
 ];
 
 const Home = (props) => {
+  useEffect(() => {
+    props.setScore(0);
+  }, []);
   return (
     <div className="flex flex-wrap items-center justify-center w-screen  py-[6em] sm:gap-4 gap-1  ">
       {GameBoards.map((game, i) => {

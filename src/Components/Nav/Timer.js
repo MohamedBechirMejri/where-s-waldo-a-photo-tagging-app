@@ -1,6 +1,8 @@
-const Timer = () => {
+const Timer = (props) => {
   return (
-    <div className="flex items-center justify-center w-1/3 h-full border-white rounded-xl">01:00:00</div>
+    <div className="flex items-center justify-center h-full border-white rounded-xl">
+      {props.score}
+    </div>
   );
 };
 

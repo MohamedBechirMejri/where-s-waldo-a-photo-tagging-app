@@ -7,11 +7,11 @@ const GameOver = (props) => {
       }}
       onSubmit={() => {
         props.setCurrentPage("scores");
+        props.setScore(0);
       }}
     >
       <h1 className="sm:text-[2em]">
-        {" "}
-        Score: <br /> 1 minute 52 seconds{" "}
+        Score: <br /> {props.score}
       </h1>
 
       <input

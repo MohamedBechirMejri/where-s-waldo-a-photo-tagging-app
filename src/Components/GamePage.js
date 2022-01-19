@@ -11,6 +11,15 @@ const GamePage = (props) => {
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      if (!gameOver) props.setScore(props.score + 1);
+    }, 50);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [props.score]);
+
+  useEffect(() => {
     props.setChars(characters[props.game.i]);
   }, []);
 
@@ -67,7 +76,13 @@ const GamePage = (props) => {
           setGameOver={setGameOver}
         />
       )}
-      {gameOver && <GameOver setCurrentPage={props.setCurrentPage} />}
+      {gameOver && (
+        <GameOver
+          setCurrentPage={props.setCurrentPage}
+          score={props.score}
+          setScore={props.setScore}
+        />
+      )}
     </div>
   );
 };

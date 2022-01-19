@@ -7,6 +7,7 @@ const App = () => {
   const [game, setGame] = useState("n64");
   const [currentPage, setCurrentPage] = useState("home");
   const [chars, setChars] = useState([]);
+  const [score, setScore] = useState(0);
 
   return (
     <div className="bg-[#272727] min-h-screen w-screen">
@@ -15,6 +16,7 @@ const App = () => {
         currentPage={currentPage}
         game={game}
         chars={chars}
+        score={score}
       />
 
       {currentPage === "game" ? (
@@ -24,13 +26,19 @@ const App = () => {
           setChars={setChars}
           setCurrentPage={setCurrentPage}
           setGame={setGame}
+          score={score}
+          setScore={setScore}
         />
       ) : currentPage === "credits" ? (
         <div>credits</div>
       ) : currentPage === "scores" ? (
         <div>Scores</div>
       ) : (
-        <Home setCurrentPage={setCurrentPage} setGame={setGame} />
+        <Home
+          setCurrentPage={setCurrentPage}
+          setGame={setGame}
+          setScore={setScore}
+        />
       )}
     </div>
   );
