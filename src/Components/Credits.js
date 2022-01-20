@@ -5,7 +5,8 @@ const Credits = () => {
       <p className="text-3xl font-medium">
         <br />
         <span className="text-[#61DBFB]">React </span>+
-        <span className="text-[#FFA611]"> Firebase </span>
+        <span className="text-[#FFA611]"> Firebase </span>+{" "}
+        <span className="text-[#39bdf7]">TailwindCSS </span>
         Project by{" "}
         <a
           href="https://github.com/MohamedBechirMejri"
