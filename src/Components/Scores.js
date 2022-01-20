@@ -16,14 +16,17 @@ const consoles = [
 const Scores = (props) => {
   const db = getFirestore();
 
-  const [games, setGames] = useState([]);
+    const [games, setGames] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
+        setIsLoading(true);
     const games = [];
 
     onSnapshot(collection(db, props.col), (snapshot) => {
       snapshot.docs.forEach((doc) => {
-        games.push({ ...doc.data() });
+          games.push({ ...doc.data() });
+          setIsLoading(false);
       });
       setGames(games);
     });
@@ -57,7 +60,7 @@ const Scores = (props) => {
           );
         })}
       </div>
-      <Table col={props.col} games={games} />
+      <Table col={props.col} games={games} isLoading={isLoading} />
     </div>
   );
 };
