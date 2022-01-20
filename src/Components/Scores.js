@@ -1,7 +1,7 @@
 import GameBoards from "../Assets/Gameboards";
 import { useEffect, useState } from "react";
 import Table from "./Nav/Scores/Table";
-import { collection, onSnapshot, getFirestore } from "firebase/firestore";
+import { collection, onSnapshot, getFirestore, orderBy, query } from "firebase/firestore";
 
 const consoles = [
   "dreamcast",
@@ -23,7 +23,7 @@ const Scores = (props) => {
         setIsLoading(true);
     const games = [];
 
-    onSnapshot(collection(db, props.col), (snapshot) => {
+    onSnapshot(query(collection(db, props.col), orderBy('score')), (snapshot) => {
       snapshot.docs.forEach((doc) => {
           games.push({ ...doc.data() });
           setIsLoading(false);
