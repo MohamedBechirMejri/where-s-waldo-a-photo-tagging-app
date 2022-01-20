@@ -33,7 +33,7 @@ const Scores = () => {
             >
               <h1 className="font-extrabold uppercase">{game.name}</h1>
               <ol className="mt-8 list-decimal">
-                {game.scores.map((score, i) => {
+                {Object.entries(game.scores).map((score, i) => {
                   return (
                     <li
                       key={i}
@@ -49,8 +49,8 @@ const Scores = () => {
                             : "#fff",
                       }}
                     >
-                      <h1 className="uppercase">{score[0]}</h1>
-                      <h1 className="">{score[1]}</h1>
+                      <h1 className="uppercase">{score.name}</h1>
+                      <h1 className="">{score.score}</h1>
                     </li>
                   );
                 })}
