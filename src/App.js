@@ -10,7 +10,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
   const [chars, setChars] = useState([]);
   const [score, setScore] = useState(0);
-
+  const [col, setCol] = useState("dreamcast");
   return (
     <div className="bg-[#272727] min-h-screen w-screen">
       <Nav
@@ -30,11 +30,13 @@ const App = () => {
           setGame={setGame}
           score={score}
           setScore={setScore}
+          col={col}
+          setCol={setCol}
         />
       ) : currentPage === "credits" ? (
         <Credits />
       ) : currentPage === "scores" ? (
-        <Scores />
+        <Scores col={col} setCol={setCol} />
       ) : (
         <Home
           setCurrentPage={setCurrentPage}

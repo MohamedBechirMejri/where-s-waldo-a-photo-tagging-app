@@ -13,22 +13,21 @@ const consoles = [
   "xbox",
   "xbox360",
 ];
-const Scores = () => {
+const Scores = (props) => {
   const db = getFirestore();
-  const [col, setCol] = useState("dreamcast");
+
   const [games, setGames] = useState([]);
 
   useEffect(() => {
     const games = [];
 
-    onSnapshot(collection(db, col), (snapshot) => {
+    onSnapshot(collection(db, props.col), (snapshot) => {
       snapshot.docs.forEach((doc) => {
         games.push({ ...doc.data() });
       });
-      window.console.log(games);
       setGames(games);
     });
-  }, [col]);
+  }, [props.col]);
 
   return (
     <div className="flex flex-col items-center justify-start w-screen min-h-screen gap-8 py-20 text-4xl text-center text-white select-none animate-revealScores">
@@ -41,7 +40,7 @@ const Scores = () => {
             <div
               key={consoles[i]}
               onClick={() => {
-                setCol(consoles[i]);
+                props.setCol(consoles[i]);
               }}
               className="relative w-1/3 overflow-hidden transition-all sm:w-1/5 rounded-2xl sm:hover:scale-105 "
               style={{
@@ -58,7 +57,7 @@ const Scores = () => {
           );
         })}
       </div>
-      <Table col={col} games={games} />
+      <Table col={props.col} games={games} />
     </div>
   );
 };

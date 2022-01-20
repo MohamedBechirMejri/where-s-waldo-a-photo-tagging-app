@@ -82,6 +82,8 @@ const GamePage = (props) => {
           score={props.score}
           setScore={props.setScore}
           console={props.game.console}
+          col={props.col}
+          setCol={props.setCol}
         />
       )}
     </div>

@@ -17,6 +17,7 @@ const GameOver = (props) => {
           name: username,
           score: props.score,
         });
+        props.setCol(props.console);
         props.setCurrentPage("scores");
         props.setScore(0);
       }}
