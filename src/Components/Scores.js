@@ -190,7 +190,10 @@ const games = [
 const Scores = () => {
   return (
     <div className="flex flex-col items-center justify-start w-screen min-h-screen gap-8 py-20 text-4xl text-center text-white select-none animate-revealScores">
-      <h1 className="text-5xl font-extrabold uppercase">Leaderboards</h1>
+      <h1 className="text-5xl font-extrabold uppercase">
+        scores <br /> <span className="text-lg">(less is better)</span>
+      </h1>
+
       <div className="flex flex-wrap items-center justify-center gap-4 ">
         {games.map((game, i) => {
           return (
