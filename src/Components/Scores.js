@@ -6,10 +6,10 @@ const Scores = () => {
   const [games, setGames] = useState([]);
 
   const db = getFirestore();
-  const colRef = collection(db, "leaderboards");
+  const colRef = collection(db, "games");
   useEffect(() => {
     const unsubscribe = onSnapshot(colRef, (snapshot) => {
-      setGames(snapshot.docs[0].data().games);
+      setGames(snapshot.docs.map((doc) => doc.data()));
     });
     return () => unsubscribe();
   }, [db]);
@@ -33,7 +33,7 @@ const Scores = () => {
             >
               <h1 className="font-extrabold uppercase">{game.name}</h1>
               <ol className="mt-8 list-decimal">
-                {Object.entries(game.scores).map((score, i) => {
+                {game.scores.map((score, i) => {
                   return (
                     <li
                       key={i}
