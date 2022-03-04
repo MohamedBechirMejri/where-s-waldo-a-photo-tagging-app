@@ -1,4 +1,4 @@
-# Where's Waldo? - A Photo Tagging App
+# Where's Waldo? - A Photo Tagging App - [The Odin Project](https://theodinproject.com/)
 
 check it out [here](https://photo-tagging-game-6d738.web.app/)
 
