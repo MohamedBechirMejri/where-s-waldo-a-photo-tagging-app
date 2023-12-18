@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.5.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.32.2",
     "firebase": "^10.7.1",
     "react": "^17.0.2",
